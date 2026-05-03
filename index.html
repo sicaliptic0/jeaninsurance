@@ -7,7 +7,7 @@
 <meta name="description" content="Jean Jaimes Insurance - Tu Familia Merece Estar Protegida. Seguros en Estados Unidos en español, desde $0/mes. Sin importar tu estatus migratorio. Asesoría 100% gratuita con Jean Jaimes.">
 <meta property="og:title" content="Jean Jaimes Insurance - Tu Familia Merece Estar Protegida">
 <meta property="og:description" content="Seguros en Estados Unidos en español, desde $0/mes. Sin importar tu estatus migratorio. Asesoría gratuita.">
-<meta property="og:image" content="https://source.unsplash.com/1200x630/?insurance,family,texas">
+<meta property="og:image" content="https://source.unsplash.com/1200x630/?insurance,family,usa">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -680,25 +680,32 @@
     position: absolute;
     inset: 0;
     z-index: 20;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(26, 31, 46, 0.52);
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
     border-radius: inherit;
+    overflow: hidden;
     pointer-events: auto;
+    background: rgba(247, 245, 240, 0.06);
+  }
+  .service-card-pendiente-band {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 155%;
+    min-width: 280px;
+    transform: translate(-50%, -50%) rotate(-34deg);
+    transform-origin: center center;
+    text-align: center;
     font-family: var(--font-head);
     font-weight: 900;
-    font-size: clamp(2.2rem, 6.5vw, 3.75rem);
-    letter-spacing: 0.12em;
+    font-size: clamp(1.25rem, 3.5vw, 1.85rem);
+    letter-spacing: 0.35em;
     color: var(--accent);
-    text-shadow: 0 1px 3px rgba(0,0,0,0.35), 0 0 20px rgba(200,169,110,0.25);
-  }
-  .service-card-pendiente-text {
-    font-style: italic;
-    transform: skewX(-8deg);
-    display: inline-block;
+    padding: 12px 0;
+    background: rgba(26, 31, 46, 0.88);
+    border-top: 2px solid rgba(200, 169, 110, 0.65);
+    border-bottom: 2px solid rgba(200, 169, 110, 0.65);
+    box-shadow: 0 6px 28px rgba(0, 0, 0, 0.18);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    font-style: normal;
   }
 
   /* ═══════════════════════════════════════════
@@ -1303,7 +1310,7 @@
       <!-- REEMPLAZAR: Cambiar la URL de la imagen por una foto real de Jean Jaimes -->
       <div class="hero-image-wrap fade-up delay-2">
         <div class="hero-img-card">
-          <img src="jean photo.png" alt="Jean Jaimes - Agente de seguros en Texas" loading="eager">
+          <img src="jean photo.png" alt="Jean Jaimes - Agente de seguros en Estados Unidos" loading="eager">
           <div class="hero-img-overlay"></div>
           <div class="hero-img-badge">
             <p>Planes desde</p>
@@ -1323,7 +1330,7 @@
     <div class="stats-grid">
       <div class="stat-item fade-up">
         <div class="stat-num"><span class="counter" data-target="200">0</span>+</div>
-        <div class="stat-label">Familias protegidas<br>en Texas</div>
+        <div class="stat-label">Familias protegidas<br>en EE. UU.</div>
       </div>
       <div class="stat-item fade-up delay-1">
         <div class="stat-num"><span class="counter" data-target="2">0</span>+ años</div>
@@ -1349,7 +1356,7 @@
     <div class="fade-up" style="text-align:center; max-width:650px; margin:0 auto;">
       <div class="section-label">¿Te identificas?</div>
       <h2 class="section-title">¿Cansado de vivir con miedo a<br><em>una emergencia médica?</em></h2>
-      <p class="section-sub" style="margin:0 auto;">Muchas familias latinas en Texas creen que no tienen opciones. Yo estoy aquí para demostrarte que sí las hay.</p>
+      <p class="section-sub" style="margin:0 auto;">Muchas familias latinas en Estados Unidos creen que no tienen opciones. Yo estoy aquí para demostrarte que sí las hay.</p>
     </div>
 
     <div class="prob-sol-wrapper">
@@ -1483,7 +1490,7 @@
         <a href="https://wa.me/16824310206?text=Hola%20Jean%2C%20me%20interesa%20el%20Seguro%20de%20Visi%C3%B3n.%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener" class="btn-service">
           Quiero este plan →
         </a>
-        <div class="service-card-pendiente-overlay" aria-hidden="true"><span class="service-card-pendiente-text">PENDIENTE</span></div>
+        <div class="service-card-pendiente-overlay" aria-hidden="true"><span class="service-card-pendiente-band">PENDIENTE</span></div>
       </div>
 
       <!-- Accidentes -->
@@ -1537,7 +1544,7 @@
       <!-- Imagen -->
       <!-- REEMPLAZAR: Usar foto real de Jean Jaimes trabajando con clientes -->
       <div class="porque-img-wrap fade-up">
-        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=600&fit=crop&crop=center" alt="Jean Jaimes - Agente de seguros en Texas">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=600&fit=crop&crop=center" alt="Jean Jaimes - Agente de seguros en Estados Unidos">
         <div class="porque-img-overlay"></div>
         <div class="porque-img-quote">
           <p>"Mi compromiso es que cada familia latina en Estados Unidos tenga la protección que merece, sin barreras idiomáticas ni migratorias."</p>
@@ -1600,7 +1607,7 @@
     <div class="fade-up" style="text-align:center; max-width:580px; margin:0 auto;">
       <div class="section-label">Lo que dicen mis clientes</div>
       <h2 class="section-title">Familias que ya<br><em>están protegidas</em></h2>
-      <p class="section-sub" style="margin:0 auto">Más de 200 familias en el área DFW confían en Jean Jaimes Insurance.</p>
+      <p class="section-sub" style="margin:0 auto">Más de 200 familias en Estados Unidos confían en Jean Jaimes Insurance.</p>
     </div>
 
     <div class="testimonios-grid">
@@ -1611,18 +1618,18 @@
           <div class="testi-avatar" style="background: linear-gradient(135deg,#C8A96E,#e8c57e);">M</div>
           <div>
             <div class="testi-name">María G.</div>
-            <div class="testi-city">Fort Worth, TX</div>
+            <div class="testi-city">Fort Worth, EE. UU.</div>
           </div>
         </div>
       </div>
       <div class="testi-card fade-up delay-1">
         <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">El mejor asesor de seguros, además del asesoramiento totalmente personalizado. Me ayudó a conseguir seguro de vida desde $49 y entendí exactamente qué cubre. 100% recomendado para toda la comunidad latina en Texas.</p>
+        <p class="testi-text">El mejor asesor de seguros, además del asesoramiento totalmente personalizado. Me ayudó a conseguir seguro de vida desde $49 y entendí exactamente qué cubre. 100% recomendado para toda la comunidad latina en Estados Unidos.</p>
         <div class="testi-author">
           <div class="testi-avatar" style="background: linear-gradient(135deg,#4A90D9,#6baed6);">D</div>
           <div>
             <div class="testi-name">Diego E.</div>
-            <div class="testi-city">Arlington, TX</div>
+            <div class="testi-city">Arlington, EE. UU.</div>
           </div>
         </div>
       </div>
@@ -1633,7 +1640,7 @@
           <div class="testi-avatar" style="background: linear-gradient(135deg,#2ecc71,#27ae60);">R</div>
           <div>
             <div class="testi-name">Roberto S.</div>
-            <div class="testi-city">Irving, TX</div>
+            <div class="testi-city">Irving, EE. UU.</div>
           </div>
         </div>
       </div>
@@ -1692,7 +1699,7 @@
             </div>
             <div>
               <div class="contacto-info-title">Área de servicio</div>
-              <div class="contacto-info-body">Familias en <strong>todos los estados de EE.&nbsp;UU.</strong> por asesoría en línea o por teléfono. Atención presencial en Dallas, Texas.</div>
+              <div class="contacto-info-body">Familias en <strong>todos los estados de EE.&nbsp;UU.</strong> por asesoría en línea o por teléfono. Atención presencial en Dallas, EE.&nbsp;UU.</div>
             </div>
           </div>
 
@@ -1808,7 +1815,7 @@
             <span>Insurance Agency</span>
           </div>
         </div>
-        <p class="footer-desc">Agente independiente de seguros en Texas — Salud, Vida, Dental y más. Asesoría gratuita en español para la comunidad latina del área DFW.</p>
+        <p class="footer-desc">Agente independiente de seguros en Estados Unidos — Salud, Vida, Dental y más. Asesoría gratuita en español para la comunidad latina en EE.&nbsp;UU.</p>
         <!-- REEMPLAZAR: Agregar links reales a redes sociales de Jean -->
         <div class="footer-social">
           <a href="https://www.instagram.com/jeanjaimes.insurance" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">
@@ -1851,10 +1858,10 @@
     <div class="footer-bottom">
       <p class="footer-copy">
         &copy; <span id="year"></span> Jean Jaimes Insurance. Todos los derechos reservados.
-        Agente independiente licenciado en Texas.
+        Agente independiente de seguros — servicios en Estados Unidos.
       </p>
       <div class="footer-legal">
-        <span style="font-size:0.78rem; color:#4a5568;">Hecho con ❤️ para la comunidad latina de DFW</span>
+        <span style="font-size:0.78rem; color:#4a5568;">Hecho con ❤️ para la comunidad latina en Estados Unidos</span>
       </div>
     </div>
   </div>
