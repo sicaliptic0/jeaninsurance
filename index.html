@@ -106,21 +106,27 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    flex-shrink: 0;
+    flex-shrink: 1;
+    min-width: 0;
   }
   .nav-logo-icon {
-    height: 46px;
+    height: auto;
+    max-height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: transparent;
     border: none;
     overflow: visible;
+    max-width: min(280px, 38vw);
   }
   .nav-logo-icon img {
-    height: 46px;
+    height: auto;
+    max-height: 46px;
     width: auto;
+    max-width: 100%;
     object-fit: contain;
+    object-position: left center;
     display: block;
     filter: drop-shadow(0 6px 14px rgba(0,0,0,0.25));
   }
@@ -1141,6 +1147,8 @@
     .nav-links { display: none; }
     .btn-nav { display: none; }
     .hamburger { display: flex; }
+    .nav-logo-icon { max-width: min(240px, 52vw); }
+    .nav-logo-icon img { max-height: 40px; }
     .hero-inner { grid-template-columns: 1fr; gap: 40px; padding: 40px 0; text-align: center; }
     .hero-sub { margin: 0 auto 36px; }
     .hero-ctas { justify-content: center; }
@@ -1163,6 +1171,9 @@
   @media (max-width: 480px) {
     /* Compactar spacing mobile (se sentía muy grande) */
     .container { padding: 0 16px; }
+
+    .nav-logo-icon { max-width: min(200px, 62vw); }
+    .nav-logo-icon img { max-height: 34px; }
 
     #hero { min-height: auto; padding-top: 72px; }
     .hero-inner { min-height: auto; padding: 28px 0; gap: 22px; }
@@ -1228,7 +1239,7 @@
     <div class="nav-inner">
       <a href="#hero" class="nav-logo" aria-label="Jean Jaimes Insurance — Inicio">
         <div class="nav-logo-icon">
-          <img src="white logo solo.png" alt="Jean Jaimes Insurance" loading="eager">
+          <img src="white complete logo.png" alt="Jean Jaimes Insurance" loading="eager">
         </div>
       </a>
       <ul class="nav-links">
